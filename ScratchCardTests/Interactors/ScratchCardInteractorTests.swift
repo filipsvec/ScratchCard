@@ -46,7 +46,7 @@ final class ScratchCardInteractorTests: XCTestCase {
             XCTFail()
             return
         }
-        delay(5)
+        delay()
         
         guard case let .loaded(state) = appState[\.userData.cardState],
               case let .scratched(code) = state,
@@ -76,7 +76,7 @@ final class ScratchCardInteractorTests: XCTestCase {
             XCTFail()
             return
         }
-        delay(5)
+        delay()
 
         guard case let .loaded(state) = appState[\.userData.cardState],
               case let .activated(code) = state,
@@ -99,7 +99,7 @@ final class ScratchCardInteractorTests: XCTestCase {
             XCTFail()
             return
         }
-        delay(5)
+        delay()
 
         guard case let .loaded(state) = appState[\.userData.cardState],
               case let .scratched(code) = state,
@@ -128,7 +128,7 @@ final class ScratchCardInteractorTests: XCTestCase {
             XCTFail()
             return
         }
-        delay(5)
+        delay()
 
         guard case let .loaded(state) = appState[\.userData.cardState],
               case let .scratched(code) = state,
