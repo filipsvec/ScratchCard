@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FE9501F2A091737002BF45D /* ScratchCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9501E2A091737002BF45D /* ScratchCardApp.swift */; };
+		9FE950212A091737002BF45D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950202A091737002BF45D /* ContentView.swift */; };
+		9FE950232A091738002BF45D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE950222A091738002BF45D /* Assets.xcassets */; };
+		9FE950262A091738002BF45D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE950252A091738002BF45D /* Preview Assets.xcassets */; };
+		9FE950552A091931002BF45D /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950502A091931002BF45D /* Loadable.swift */; };
+		9FE950562A091931002BF45D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950512A091931002BF45D /* Store.swift */; };
+		9FE950572A091931002BF45D /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950522A091931002BF45D /* CancelBag.swift */; };
+		9FE950582A091931002BF45D /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950532A091931002BF45D /* APICall.swift */; };
+		9FE950592A091931002BF45D /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950542A091931002BF45D /* WebRepository.swift */; };
+		9FE9505B2A091E17002BF45D /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9505A2A091E17002BF45D /* PrimaryButtonStyle.swift */; };
+		9FE9505D2A091FD5002BF45D /* BackendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9505C2A091FD5002BF45D /* BackendRepository.swift */; };
+		9FE9505F2A092197002BF45D /* ActivationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9505E2A092197002BF45D /* ActivationResponse.swift */; };
+		9FE950662A092E87002BF45D /* ScratchCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950652A092E87002BF45D /* ScratchCardInteractor.swift */; };
+		9FE950682A092EA8002BF45D /* CodeGeneratorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950672A092EA8002BF45D /* CodeGeneratorRepository.swift */; };
+		9FE9506A2A093986002BF45D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950692A093986002BF45D /* AppState.swift */; };
+		9FE9506C2A093AFC002BF45D /* CardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9506B2A093AFC002BF45D /* CardState.swift */; };
+		9FE9506E2A093D47002BF45D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9506D2A093D47002BF45D /* Route.swift */; };
+		9FE950702A093DE9002BF45D /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9506F2A093DE9002BF45D /* NotificationRepository.swift */; };
+		9FE950722A094454002BF45D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950712A094454002BF45D /* DIContainer.swift */; };
+		9FE950742A09452B002BF45D /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950732A09452B002BF45D /* AppEnvironment.swift */; };
+		9FE950762A094776002BF45D /* CardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950752A094776002BF45D /* CardScreenView.swift */; };
+		9FE950782A0947B1002BF45D /* RevealScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950772A0947B1002BF45D /* RevealScreenView.swift */; };
+		9FE9507A2A0947CB002BF45D /* ActivationScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950792A0947CB002BF45D /* ActivationScreenView.swift */; };
+		9FE950832A097511002BF45D /* MockedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950812A097510002BF45D /* MockedResponse.swift */; };
+		9FE950842A097511002BF45D /* RequestMocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950822A097510002BF45D /* RequestMocking.swift */; };
+		9FE950872A0977E6002BF45D /* LoadableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950862A0977E6002BF45D /* LoadableTests.swift */; };
+		9FE950892A097847002BF45D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950882A097847002BF45D /* Helpers.swift */; };
+		9FE9508C2A097910002BF45D /* ActivationResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9508B2A097910002BF45D /* ActivationResponseTests.swift */; };
+		9FE9508E2A09823A002BF45D /* BackendRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9508D2A09823A002BF45D /* BackendRepositoryTests.swift */; };
+		9FE950902A0991A7002BF45D /* NotificationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9508F2A0991A7002BF45D /* NotificationRepositoryTests.swift */; };
+		9FE950922A0A0256002BF45D /* CodeGeneratorRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950912A0A0256002BF45D /* CodeGeneratorRepositoryTests.swift */; };
+		9FE950962A0A08FC002BF45D /* ScratchCardInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950952A0A08FC002BF45D /* ScratchCardInteractorTests.swift */; };
+		9FE950A22A0A4666002BF45D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950A12A0A4666002BF45D /* StringExtension.swift */; };
+		9FE950A42A0A4F0D002BF45D /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE950A32A0A4F0D002BF45D /* StringExtensionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FE9502C2A091738002BF45D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FE950132A091737002BF45D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FE9501A2A091737002BF45D;
+			remoteInfo = ScratchCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FE9501B2A091737002BF45D /* ScratchCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE9501E2A091737002BF45D /* ScratchCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardApp.swift; sourceTree = "<group>"; };
+		9FE950202A091737002BF45D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FE950222A091738002BF45D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FE950252A091738002BF45D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FE9502B2A091738002BF45D /* ScratchCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE950502A091931002BF45D /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		9FE950512A091931002BF45D /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		9FE950522A091931002BF45D /* CancelBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		9FE950532A091931002BF45D /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		9FE950542A091931002BF45D /* WebRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
+		9FE9505A2A091E17002BF45D /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		9FE9505C2A091FD5002BF45D /* BackendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendRepository.swift; sourceTree = "<group>"; };
+		9FE9505E2A092197002BF45D /* ActivationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationResponse.swift; sourceTree = "<group>"; };
+		9FE950652A092E87002BF45D /* ScratchCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardInteractor.swift; sourceTree = "<group>"; };
+		9FE950672A092EA8002BF45D /* CodeGeneratorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGeneratorRepository.swift; sourceTree = "<group>"; };
+		9FE950692A093986002BF45D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9FE9506B2A093AFC002BF45D /* CardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardState.swift; sourceTree = "<group>"; };
+		9FE9506D2A093D47002BF45D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		9FE9506F2A093DE9002BF45D /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
+		9FE950712A094454002BF45D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		9FE950732A09452B002BF45D /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		9FE950752A094776002BF45D /* CardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreenView.swift; sourceTree = "<group>"; };
+		9FE950772A0947B1002BF45D /* RevealScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealScreenView.swift; sourceTree = "<group>"; };
+		9FE950792A0947CB002BF45D /* ActivationScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationScreenView.swift; sourceTree = "<group>"; };
+		9FE950812A097510002BF45D /* MockedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedResponse.swift; sourceTree = "<group>"; };
+		9FE950822A097510002BF45D /* RequestMocking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMocking.swift; sourceTree = "<group>"; };
+		9FE950862A0977E6002BF45D /* LoadableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableTests.swift; sourceTree = "<group>"; };
+		9FE950882A097847002BF45D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		9FE9508B2A097910002BF45D /* ActivationResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationResponseTests.swift; sourceTree = "<group>"; };
+		9FE9508D2A09823A002BF45D /* BackendRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendRepositoryTests.swift; sourceTree = "<group>"; };
+		9FE9508F2A0991A7002BF45D /* NotificationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepositoryTests.swift; sourceTree = "<group>"; };
+		9FE950912A0A0256002BF45D /* CodeGeneratorRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGeneratorRepositoryTests.swift; sourceTree = "<group>"; };
+		9FE950952A0A08FC002BF45D /* ScratchCardInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardInteractorTests.swift; sourceTree = "<group>"; };
+		9FE950A12A0A4666002BF45D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		9FE950A32A0A4F0D002BF45D /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FE950182A091737002BF45D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE950282A091738002BF45D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FE950122A091737002BF45D = {
+			isa = PBXGroup;
+			children = (
+				9FE9501D2A091737002BF45D /* ScratchCard */,
+				9FE9502E2A091738002BF45D /* ScratchCardTests */,
+				9FE9501C2A091737002BF45D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FE9501C2A091737002BF45D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9501B2A091737002BF45D /* ScratchCard.app */,
+				9FE9502B2A091738002BF45D /* ScratchCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FE9501D2A091737002BF45D /* ScratchCard */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950492A0917DA002BF45D /* Common */,
+				9FE950482A0917D1002BF45D /* DI */,
+				9FE9504A2A0917E7002BF45D /* Interactors */,
+				9FE9504C2A091857002BF45D /* Models */,
+				9FE9504B2A091807002BF45D /* Repositories */,
+				9FE9504D2A09185E002BF45D /* UI */,
+				9FE950222A091738002BF45D /* Assets.xcassets */,
+				9FE950732A09452B002BF45D /* AppEnvironment.swift */,
+				9FE9501E2A091737002BF45D /* ScratchCardApp.swift */,
+				9FE950242A091738002BF45D /* Preview Content */,
+			);
+			path = ScratchCard;
+			sourceTree = "<group>";
+		};
+		9FE950242A091738002BF45D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950252A091738002BF45D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FE9502E2A091738002BF45D /* ScratchCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950852A0977B4002BF45D /* Common */,
+				9FE950932A0A048F002BF45D /* Interactors */,
+				9FE9508A2A0978F4002BF45D /* Models */,
+				9FE950802A097510002BF45D /* NetworkMocking */,
+				9FE9507B2A09722D002BF45D /* Repositories */,
+				9FE950882A097847002BF45D /* Helpers.swift */,
+			);
+			path = ScratchCardTests;
+			sourceTree = "<group>";
+		};
+		9FE950482A0917D1002BF45D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950712A094454002BF45D /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		9FE950492A0917DA002BF45D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950622A09297C002BF45D /* API */,
+				9FE950632A0929C3002BF45D /* Extensions */,
+				9FE950642A0929DE002BF45D /* Other */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9FE9504A2A0917E7002BF45D /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950652A092E87002BF45D /* ScratchCardInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9FE9504B2A091807002BF45D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9505C2A091FD5002BF45D /* BackendRepository.swift */,
+				9FE950672A092EA8002BF45D /* CodeGeneratorRepository.swift */,
+				9FE9506F2A093DE9002BF45D /* NotificationRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9FE9504C2A091857002BF45D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9505E2A092197002BF45D /* ActivationResponse.swift */,
+				9FE950692A093986002BF45D /* AppState.swift */,
+				9FE9506B2A093AFC002BF45D /* CardState.swift */,
+				9FE9506D2A093D47002BF45D /* Route.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FE9504D2A09185E002BF45D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9504F2A0918B9002BF45D /* Components */,
+				9FE9504E2A0918B1002BF45D /* Screens */,
+				9FE950202A091737002BF45D /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9FE9504E2A0918B1002BF45D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950752A094776002BF45D /* CardScreenView.swift */,
+				9FE950772A0947B1002BF45D /* RevealScreenView.swift */,
+				9FE950792A0947CB002BF45D /* ActivationScreenView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9FE9504F2A0918B9002BF45D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9505A2A091E17002BF45D /* PrimaryButtonStyle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9FE950622A09297C002BF45D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950532A091931002BF45D /* APICall.swift */,
+				9FE950542A091931002BF45D /* WebRepository.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9FE950632A0929C3002BF45D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950A12A0A4666002BF45D /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FE950642A0929DE002BF45D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950522A091931002BF45D /* CancelBag.swift */,
+				9FE950502A091931002BF45D /* Loadable.swift */,
+				9FE950512A091931002BF45D /* Store.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9FE9507B2A09722D002BF45D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9508D2A09823A002BF45D /* BackendRepositoryTests.swift */,
+				9FE9508F2A0991A7002BF45D /* NotificationRepositoryTests.swift */,
+				9FE950912A0A0256002BF45D /* CodeGeneratorRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9FE950802A097510002BF45D /* NetworkMocking */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950812A097510002BF45D /* MockedResponse.swift */,
+				9FE950822A097510002BF45D /* RequestMocking.swift */,
+			);
+			path = NetworkMocking;
+			sourceTree = "<group>";
+		};
+		9FE950852A0977B4002BF45D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950862A0977E6002BF45D /* LoadableTests.swift */,
+				9FE950A32A0A4F0D002BF45D /* StringExtensionTests.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9FE9508A2A0978F4002BF45D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9508B2A097910002BF45D /* ActivationResponseTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FE950932A0A048F002BF45D /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9FE950952A0A08FC002BF45D /* ScratchCardInteractorTests.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FE9501A2A091737002BF45D /* ScratchCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE9503F2A091738002BF45D /* Build configuration list for PBXNativeTarget "ScratchCard" */;
+			buildPhases = (
+				9FE950172A091737002BF45D /* Sources */,
+				9FE950182A091737002BF45D /* Frameworks */,
+				9FE950192A091737002BF45D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScratchCard;
+			productName = ScratchCard;
+			productReference = 9FE9501B2A091737002BF45D /* ScratchCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FE9502A2A091738002BF45D /* ScratchCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE950422A091738002BF45D /* Build configuration list for PBXNativeTarget "ScratchCardTests" */;
+			buildPhases = (
+				9FE950272A091738002BF45D /* Sources */,
+				9FE950282A091738002BF45D /* Frameworks */,
+				9FE950292A091738002BF45D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FE9502D2A091738002BF45D /* PBXTargetDependency */,
+			);
+			name = ScratchCardTests;
+			productName = ScratchCardTests;
+			productReference = 9FE9502B2A091738002BF45D /* ScratchCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FE950132A091737002BF45D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9FE9501A2A091737002BF45D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					9FE9502A2A091738002BF45D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9FE9501A2A091737002BF45D;
+					};
+				};
+			};
+			buildConfigurationList = 9FE950162A091737002BF45D /* Build configuration list for PBXProject "ScratchCard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FE950122A091737002BF45D;
+			productRefGroup = 9FE9501C2A091737002BF45D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FE9501A2A091737002BF45D /* ScratchCard */,
+				9FE9502A2A091738002BF45D /* ScratchCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FE950192A091737002BF45D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE950262A091738002BF45D /* Preview Assets.xcassets in Resources */,
+				9FE950232A091738002BF45D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE950292A091738002BF45D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FE950172A091737002BF45D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE9505F2A092197002BF45D /* ActivationResponse.swift in Sources */,
+				9FE9505D2A091FD5002BF45D /* BackendRepository.swift in Sources */,
+				9FE950212A091737002BF45D /* ContentView.swift in Sources */,
+				9FE950572A091931002BF45D /* CancelBag.swift in Sources */,
+				9FE950582A091931002BF45D /* APICall.swift in Sources */,
+				9FE950742A09452B002BF45D /* AppEnvironment.swift in Sources */,
+				9FE9506E2A093D47002BF45D /* Route.swift in Sources */,
+				9FE950682A092EA8002BF45D /* CodeGeneratorRepository.swift in Sources */,
+				9FE950762A094776002BF45D /* CardScreenView.swift in Sources */,
+				9FE9501F2A091737002BF45D /* ScratchCardApp.swift in Sources */,
+				9FE950662A092E87002BF45D /* ScratchCardInteractor.swift in Sources */,
+				9FE9506A2A093986002BF45D /* AppState.swift in Sources */,
+				9FE9505B2A091E17002BF45D /* PrimaryButtonStyle.swift in Sources */,
+				9FE9507A2A0947CB002BF45D /* ActivationScreenView.swift in Sources */,
+				9FE950552A091931002BF45D /* Loadable.swift in Sources */,
+				9FE9506C2A093AFC002BF45D /* CardState.swift in Sources */,
+				9FE950562A091931002BF45D /* Store.swift in Sources */,
+				9FE950592A091931002BF45D /* WebRepository.swift in Sources */,
+				9FE950722A094454002BF45D /* DIContainer.swift in Sources */,
+				9FE950782A0947B1002BF45D /* RevealScreenView.swift in Sources */,
+				9FE950A22A0A4666002BF45D /* StringExtension.swift in Sources */,
+				9FE950702A093DE9002BF45D /* NotificationRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE950272A091738002BF45D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE9508C2A097910002BF45D /* ActivationResponseTests.swift in Sources */,
+				9FE950902A0991A7002BF45D /* NotificationRepositoryTests.swift in Sources */,
+				9FE950872A0977E6002BF45D /* LoadableTests.swift in Sources */,
+				9FE950922A0A0256002BF45D /* CodeGeneratorRepositoryTests.swift in Sources */,
+				9FE950842A097511002BF45D /* RequestMocking.swift in Sources */,
+				9FE9508E2A09823A002BF45D /* BackendRepositoryTests.swift in Sources */,
+				9FE950892A097847002BF45D /* Helpers.swift in Sources */,
+				9FE950962A0A08FC002BF45D /* ScratchCardInteractorTests.swift in Sources */,
+				9FE950A42A0A4F0D002BF45D /* StringExtensionTests.swift in Sources */,
+				9FE950832A097511002BF45D /* MockedResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FE9502D2A091738002BF45D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FE9501A2A091737002BF45D /* ScratchCard */;
+			targetProxy = 9FE9502C2A091738002BF45D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9FE9503D2A091738002BF45D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FE9503E2A091738002BF45D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FE950402A091738002BF45D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchCard/Preview Content\"";
+				DEVELOPMENT_TEAM = NTTAS687FN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ScratchCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9FE950412A091738002BF45D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchCard/Preview Content\"";
+				DEVELOPMENT_TEAM = NTTAS687FN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ScratchCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9FE950432A091738002BF45D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NTTAS687FN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ScratchCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScratchCard";
+			};
+			name = Debug;
+		};
+		9FE950442A091738002BF45D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NTTAS687FN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ScratchCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScratchCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FE950162A091737002BF45D /* Build configuration list for PBXProject "ScratchCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE9503D2A091738002BF45D /* Debug */,
+				9FE9503E2A091738002BF45D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE9503F2A091738002BF45D /* Build configuration list for PBXNativeTarget "ScratchCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE950402A091738002BF45D /* Debug */,
+				9FE950412A091738002BF45D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE950422A091738002BF45D /* Build configuration list for PBXNativeTarget "ScratchCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE950432A091738002BF45D /* Debug */,
+				9FE950442A091738002BF45D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FE950132A091737002BF45D /* Project object */;
+}
